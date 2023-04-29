@@ -327,6 +327,11 @@ header.fix_style .navbar {
   align-items: center;
 }
 
+.navbar-brand {
+	width: 50%;
+	height: 50%;
+}	
+
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 5px 16px;
   font-size: 16px;
@@ -874,6 +879,8 @@ header.fix_style .navbar-expand-lg .navbar-nav .nav-link.dark_btn {
 .banner_section .banner_images > img {
   border: 2px solid #6a49f2;
   border-radius: 33px;
+  width: 50%;
+  height: 50%;	
 }
 
 .banner_section .banner_images .sub_images img {
