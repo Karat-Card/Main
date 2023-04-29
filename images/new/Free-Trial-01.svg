@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="141" height="141.198" viewBox="0 0 141 141.198">
+  <defs>
+    <filter id="bg" x="0" y="0" width="141" height="141.198" filterUnits="userSpaceOnUse">
+      <feOffset dy="15" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8.5" result="blur"/>
+      <feFlood flood-color="#6a49f2" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Free_Trial" data-name="Free Trial" transform="translate(-4544.5 -6937.296)">
+    <g transform="matrix(1, 0, 0, 1, 4544.5, 6937.3)" filter="url(#bg)">
+      <path id="bg-2" data-name="bg" d="M445,7055c36.11-24.766,51,12.146,51,37a45,45,0,0,1-90,0C406,7067.142,424.5,7069.053,445,7055Z" transform="translate(-380.5 -7036.3)" fill="#6a49f2"/>
+    </g>
+    <g id="Vector_Smart_Object" data-name="Vector Smart Object" transform="translate(4164 -99)">
+      <g id="Vector_Smart_Object-2" data-name="Vector Smart Object" transform="translate(368.038 6957.327)">
+        <g id="Group_3" data-name="Group 3">
+          <path id="Path_53" data-name="Path 53" d="M79.372,142.581l-1.988-1.967a.637.637,0,0,0-1.046.233L74.9,144.671l-.259.688a.643.643,0,0,0,.961.765l3.681-2.545A.653.653,0,0,0,79.372,142.581Z" fill="#fff"/>
+          <path id="Path_54" data-name="Path 54" d="M104.2,122.686,61.479,131.22a.649.649,0,0,0-.05,1.259l9.02,2.58a.635.635,0,0,0,.371-.007l19.763-6.426a.647.647,0,0,1,.547,1.158L78.054,138.46a.652.652,0,0,0-.1,1l7.99,8.024a.636.636,0,0,0,.96-.067l17.925-23.7A.647.647,0,0,0,104.2,122.686Z" fill="#fff"/>
+          <path id="Path_55" data-name="Path 55" d="M87.624,130.493l-15.786,5.581a.648.648,0,0,0-.421.711l1.124,7.307a.638.638,0,0,0,1.231.13l2.075-5.526.1-.278.3-.192,11.561-7.33A.224.224,0,0,0,87.624,130.493Z" fill="#fff"/>
+        </g>
+      </g>
+      <path id="Color_Overlay" data-name="Color Overlay" d="M453.981,7104.813l-7.99-8.026a.651.651,0,0,1,.1-1l13.076-8.675a.647.647,0,0,0-.547-1.159l-19.762,6.426a.646.646,0,0,1-.373.007l-9.019-2.58a.65.65,0,0,1,.05-1.259l42.716-8.534a.647.647,0,0,1,.633,1.029l-17.926,23.7a.631.631,0,0,1-.508.255A.642.642,0,0,1,453.981,7104.813Zm-11.3-2.127.259-.687,1.435-3.825a.638.638,0,0,1,1.047-.234l1.988,1.969a.652.652,0,0,1-.087,1l-3.682,2.545a.614.614,0,0,1-.358.118A.651.651,0,0,1,442.681,7102.686Zm-2.1-1.266-1.125-7.307a.647.647,0,0,1,.423-.709l15.786-5.582a.224.224,0,0,1,.191.4l-11.56,7.331-.3.19-.105.278-2.076,5.528a.62.62,0,0,1-.594.417A.631.631,0,0,1,440.579,7101.419Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

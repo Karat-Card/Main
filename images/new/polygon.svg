@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 26" width="34" height="26">
+	<title>triangle</title>
+	<style>
+		.s0 { fill: none;stroke: #6a49f2;stroke-width: 3 } 
+	</style>
+	<path id="triangle" class="s0" d="m17 4l12 15h-12-12z"/>
+</svg>
