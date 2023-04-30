@@ -325,7 +325,7 @@ header.fix_style .navbar {
 
 .navbar-expand-lg .navbar-nav {
   align-items: center;
-}
+}	
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 5px 16px;
@@ -550,7 +550,7 @@ header.fix_style .navbar-expand-lg .navbar-nav .nav-link.dark_btn {
 }
 
 .navbar-brand img {
-  width: 165px;
+  width: 85px;
 }
 
 .white_header_logo {
@@ -874,6 +874,7 @@ header.fix_style .navbar-expand-lg .navbar-nav .nav-link.dark_btn {
 .banner_section .banner_images > img {
   border: 2px solid #6a49f2;
   border-radius: 33px;
+  width: 890px;	
 }
 
 .banner_section .banner_images .sub_images img {
