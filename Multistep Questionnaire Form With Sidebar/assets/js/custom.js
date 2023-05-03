@@ -245,9 +245,9 @@ $(document).ready(function()
                       type: "POST",
                       url: "form handling/send.php",
                       data: dataString,
-                      processData: false,
-                      contentType: false,
-                      cache: false,
+                      processData: true,
+                      contentType: true,
+                      cache: true,
                       success: function(data,status)
                       {
 
