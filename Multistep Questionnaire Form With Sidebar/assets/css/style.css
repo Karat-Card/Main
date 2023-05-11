@@ -1532,3 +1532,9 @@ input[type=number] {
   border: solid 2px #ff4444 !important;
   position: relative;
 }
+
+#sig-canvas {
+  border: 2px dotted #CCCCCC;
+  border-radius: 15px;
+  cursor: crosshair;
+}
