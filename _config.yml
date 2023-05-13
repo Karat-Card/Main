@@ -8,3 +8,6 @@ collections:
   uploads:
     title: Uploads
     output: true
+  votes:
+    title: Votes
+    output: true
