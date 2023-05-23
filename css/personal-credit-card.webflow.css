@@ -159,6 +159,10 @@ p {
   display: block;
 }
 
+.sidebar-image.personal {
+  background-image: url('../images/kh2XtABcA75SFX4DPd95WqXsvvM.webp');
+}
+
 .sidebar-item {
   border-bottom: 1px solid #e6e6e6;
   padding: 10px;
@@ -254,15 +258,8 @@ p {
   left: 4px;
 }
 
-.container-2 {
-  overflow: scroll;
-}
-
 .html-embed-2 {
-  width: auto;
   height: 300px;
-  object-fit: cover;
-  border: 1px solid #000;
   overflow: scroll;
 }
 
