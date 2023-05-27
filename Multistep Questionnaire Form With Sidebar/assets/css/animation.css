@@ -1,0 +1,197 @@
+ 
+.pop-right
+{
+ animation: pop-right 0.5s ease forwards;
+ opacity: 0;
+} 
+
+@keyframes pop-right{
+ 0% {
+   opacity: 0;
+   transform: translateX(300px) scale(0.5);
+ }
+   70% {
+   opacity: 1;
+   transform: translateX(0px) scale(0.5);
+ }
+
+ 100% {
+   
+   transform: scale(1.0);
+   opacity: 1;
+
+ }
+}
+.a0
+{
+	animation-name: step_progress0;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes step_progress0
+{
+	from
+	{
+		width: 25%;
+	}
+	to
+	{
+		width: 0;
+	}
+
+}
+.a20
+{
+	animation-name: step_progress20;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes step_progress20
+{
+	from
+	{
+		width: 0;
+	}
+	to
+	{
+		width: 20%;
+	}
+}
+.a40
+{
+	animation-name: step_progress40;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes step_progress40
+{
+	from
+	{
+		width: 20%;
+	}
+	to
+	{
+		width: 40%;
+	}
+}
+.a60
+{
+	animation-name: step_progress60;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes step_progress60
+{
+	from
+	{
+		width: 40%;
+	}
+	to
+	{
+		width: 60%;
+	}
+}
+.a80
+{
+	animation-name: step_progress80;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes step_progress80
+{
+	from
+	{
+		width: 60%;
+	}
+	to
+	{
+		width: 80%;
+	}
+}
+
+@keyframes uploading-animation
+{
+	from
+	{
+		width: 0;
+	}
+	to
+	{
+		width: 100%;
+	}
+}
+.thankyou-circle
+{
+  animation: circle 0.5s linear forwards;
+}
+@keyframes circle 
+{
+  0%
+  {
+    clip-path: circle(0%);
+  }  
+  100%
+  {
+    clip-path: circle(100%);
+  }  
+}
+/*tick animation*/
+
+@keyframes rotate-circle
+{
+  25% 
+  {
+
+  		border-left-color: rgb(34,208,136);
+  }
+  50% 
+  {
+
+  		border-left-color: rgb(34,208,136);
+  		border-top-color: rgb(34,208,136);
+  }
+  75% 
+  {
+
+  		border-left-color: rgb(34,208,136);
+  		border-top-color: rgb(34,208,136);
+  		border-right-color: rgb(34,208,136);
+  }
+  100% 
+  {
+  		transform: rotate(360deg);
+  		border-color: rgb(34,208,136);
+  }
+}
+
+@keyframes tick-icon
+{
+  0%
+  {
+    font-size: 0;
+    opacity: 1;
+    top: 50%;
+  }
+  20%
+  {
+    font-size: 10px;
+    top: 45%;
+  }
+  40%
+  {
+    font-size: 20px;
+    top: 40%;
+  }
+  70%
+  {
+    font-size: 200px;
+    top: 0;
+  }
+  100%
+  {
+    font-size: 50px;
+    opacity: 1;
+    top: 30%;
+  }
+}
+

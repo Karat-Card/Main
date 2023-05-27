@@ -1,0 +1,421 @@
+/*L-desktop*/
+
+@media (min-device-width:  1600px)
+{
+
+}
+
+/*L-laptops*/
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1440px)
+{
+    
+	.sidebar-inner .sidebar-list
+    {
+        padding: 60px 30px;
+    }
+    .client-logo img
+    {
+        width: 130%;
+    }
+    .step-2 .step-inner .wrapper, .step-3 .step-inner .wrapper, .step-4 .step-inner .wrapper, .step-5 .step-inner .wrapper
+    {
+        margin-left: 150px;
+        width: 70%;
+    }
+    .next-prev-btn p
+    {
+        font-size: 16px;
+    }
+
+
+
+    .thankyou-page-inner
+	{
+		top: 15%;
+	}
+	.thankyou-page-inner .wrapper
+	{
+		padding: 100px;
+	}
+    .next-prev-btn .back
+    {
+        text-align: center;
+    }
+    
+}
+
+/*laptops/tablets*/
+@media only screen and (min-device-width: 576px) and (max-device-width: 1024px)
+{
+    
+    .sidebar, .sidebar-default
+    {
+        width: 35%;
+    }
+    .step-1,.step-2,.step-3,.step-4,.step-5
+    {
+        width: 65%;
+    }
+    .step-heading .heading
+    {
+        font-size: 35px;
+    }
+    .sub-heading .sub-heading-marker
+    {
+        font-size: 20px;
+    }
+    .sub-heading .sub-heading-text
+    {
+        font-size: 20px;
+    }
+    .tab-50
+    {
+        width: 50%;
+    }
+    .tab-100
+    {
+        width: 100%;
+    }
+    .radio-field
+    {
+        width: 300px;
+        height: 300px;
+    }
+    .client-logo img
+    {
+        width: 210%;
+    }
+    .sidebar-inner .sidebar-list
+    {
+        padding: 60px 30px;
+    }
+    .sidebar-list .list-heading
+    {
+        font-size: 25px;
+    }
+    .sidebar-list .list-text
+    {
+        font-size: 14px;
+    }
+    .feature-text h6
+    {
+        font-size: 18px;
+    }
+    .feature-text p
+    {
+        font-size: 12px;
+    }
+    .step-text
+    {
+        font-size: 18px;
+    }
+    .step-2 .step-inner .wrapper, .step-3 .step-inner .wrapper, .step-4 .step-inner .wrapper, .step-5 .step-inner .wrapper
+    {
+        width: 90%;
+        margin-left: 50px;
+    }
+    .next-prev-btn p
+    {
+        font-size: 16px;
+    }
+    .range
+    {
+        display: none;
+    }
+    .range-input input[type=range]
+    {
+        width: 100%;
+    }
+
+
+    .thankyou-page
+	{
+		border-radius: 0;
+		padding: 20px;
+	}
+	.thankyou-page-inner
+	{
+		top: 5%;
+	}
+	.thankyou-page-inner .wrapper
+	{
+		padding: 50px;
+		
+	}
+	.thankyou-page-inner h2
+	{
+		font-size: 30px;
+	}
+}
+
+
+/*tablets*/
+@media only screen and (min-device-width: 576px) and (max-device-width: 768px)
+{
+
+    .sidebar, .sidebar-default
+    {
+        order: 2;
+    }
+    .tab-sm-100
+    {
+        width: 100%;
+    }
+    .step-2 .step-inner .wrapper, .step-3 .step-inner .wrapper, .step-4 .step-inner .wrapper, .step-5 .step-inner .wrapper
+    {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .client-logo img
+    {
+        width: 100%;
+    }
+    .radio-field
+    {
+        width: 250px;
+        height: 250px;
+    }
+    .radio-field input[type=radio]:checked:after
+    {
+        font-size: 16px;
+        line-height: 35px;
+        height: 38px;
+        width: 38px;
+        right: 27px;
+    }
+    .sidebar-inner .sidebar-list
+    {
+        padding: 60px 60px;
+        padding-top: 70px;
+    }
+    .steps-counter
+    {
+        width: 100%;
+        right: 0;
+        top: 0;
+        padding: 10px 0;
+        text-align: center;
+        background-color: rgb(255,255,255);
+        position: fixed;
+    }
+    .step-counter-inner
+    {
+        margin: 0 auto;
+    }
+    
+    
+
+
+}
+
+
+/*Smart phone*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 576px)
+{
+    .sidebar, .sidebar-default
+    {
+        order: 2;
+    }
+    
+    .step-heading
+    {
+        text-align: center;
+        display: grid;
+    }
+    .step-heading .heading-marker
+    {
+        width: 100px;
+        height: 9px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .step-heading .heading
+    {
+        font-size: 24px;
+        margin-left: 0;
+    }
+    .radio-field
+    {
+        width: 256px;
+        height: 256px;
+        margin-bottom: 15px;
+    }
+    .feature-text h6
+    {
+        font-size: 18px;
+    }
+    .feature-text p
+    {
+        font-size: 12px;
+    }
+    .radio-field input[type=radio]:checked:after
+    {
+        font-size: 16px;
+        line-height: 35px;
+        height: 38px;
+        width: 38px;
+        right: 32px;
+    }
+    .client-logo
+    {
+        text-align: center;
+    }
+    .client-logo img
+    {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .carousel-caption
+    {
+        width: 80%;
+    }
+    .sidebar-inner .sidebar-list
+    {
+        padding: 60px 50px;
+        padding-top: 70px;
+    }
+    .sidebar-list .list-heading
+    {
+        font-size: 25px;
+    }
+    .sidebar-list .list-text
+    {
+        font-size: 12px;
+    }
+    .step-2 .step-inner .wrapper, .step-3 .step-inner .wrapper, .step-4 .step-inner .wrapper, .step-5 .step-inner .wrapper
+    {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .step-text
+    {
+        font-size: 16px;
+        text-align: center;
+    }
+    .next-prev-btn
+    {
+        display: grid;
+        justify-content: center;
+
+    }
+    .next-prev-btn *
+    {
+        margin-bottom: 15px;
+    }
+    .sub-heading .sub-heading-text
+    {
+        font-size: 20px;
+    }
+    .sub-heading .sub-heading-marker
+    {
+        font-size: 20px;
+    }
+    .step-inner article
+    {
+        width: 100%;
+    }
+    .hire-field
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hire-field-detail
+    {
+        text-align: center;
+        justify-content: center;
+        padding-left: 0;
+        left: auto;
+    }
+    .hire-field-detail input[type=radio]:checked::after
+    {
+
+        top: -18%;
+        z-index: 99;
+        right: 50px;
+    }
+
+
+
+   
+
+
+    .thankyou-page
+	{
+		border-radius: 0;
+		padding: 20px;
+	}
+	.thankyou-page-inner
+	{
+		top: 15%;
+		border-radius: 10px;
+	}
+	.thankyou-page-inner .wrapper
+	{
+		padding: 50px;
+		
+	}
+	.thankyou-page-inner h2
+	{
+		font-size: 30px;
+	}
+    .next-prev-btn .back
+    {
+        width: 100%;
+    }
+    .range
+    {
+        display: none;
+    }
+    .range-input input[type=range]
+    {
+        width: 100%;
+    }
+    .sub-article .sub-step-text
+    {
+        font-size: 16px;
+    }
+    .range-input h5
+    {
+        font-size: 17px;
+    }
+    .hire-field .hire-field-icon
+    {
+        min-width: 90px;
+        height: 90px;
+    }
+    .hire-field-detail
+    {
+        height: 90px;
+        min-width: 100%;
+    }
+    .hire-field-detail h3
+    {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .hire-field-detail span
+    {
+        margin-bottom: 3px;
+    }
+
+    .steps-counter
+    {
+        width: 100%;
+        right: 0;
+        top: 0;
+        padding: 10px 0;
+        text-align: center;
+        background-color: rgb(255,255,255);
+        position: fixed;
+    }
+    .step-counter-inner
+    {
+        margin: 0 auto;
+    }
+    
+
+}
+
+

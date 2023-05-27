@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+
+<div id="cursor">
+   <div id="circle"></div>
+</div>
+<br>
+</br>
+</head>
+
+<body>
+
+<div id="infographic" class="d-flex flex-column align-items-center py-5">
+   <div class="step one text-primary">
+      <div class="circle">
+         <i class="fas fa-meteor"></i>
+         <h4>Planning<br />Phase 1</h4>
+      </div>
+      <article data-step="1">
+         <header class="d-flex align-items-center text-primary">
+            <i class="fas fa-meteor"></i>
+            <h6>Draft Project Documents</h6>
+         </header>
+
+         <div class="body">
+            <small>Project Charter, Project Plan.</small>
+
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a> </a>
+               <a class="btn btn-outline-primary" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+      <article data-step="2">
+         <header class="d-flex align-items-center text-primary">
+            <i class="fas fa-meteor"></i>
+            <h6>Draft Technical Specs</h6>
+         </header>
+
+         <div class="body">
+            <small> Product Requirements Specs, Software Design Specs, Software Requirements Specs, System Architecture Design. </small>
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-primary" href="#">Prev</a>
+               <a class="btn btn-outline-primary" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+      <article data-step="3">
+         <header class="d-flex align-items-center text-primary">
+            <i class="fas fa-meteor"></i>
+            <h6>Draft Design Systems</h6>
+         </header>
+
+         <div class="body">
+            <small> Create the design system and organize all components, pages, colors, etc.</small>
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-primary" href="#">Prev</a>
+               <a class="btn btn-outline-primary" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+      <article data-step="4">
+         <header class="d-flex align-items-center text-primary">
+            <i class="fas fa-meteor"></i>
+            <h6>Develop Initial Cardholder Platform</h6>
+         </header>
+
+         <div class="body">
+            <small>A full build of the entire platform without any integrations or advanced functionality. </small>
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-primary" href="#">Prev</a>
+               <a class="btn btn-outline-primary" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+      <article data-step="5">
+         <header class="d-flex align-items-center text-primary">
+            <i class="fas fa-meteor"></i>
+            <h6>Credit Application</h6>
+         </header>
+
+         <div class="body">
+            <small>Create the full credit application for consumers and businesses with all options and funtions including auto emails. </small>
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-primary" href="#">Prev</a>
+               <a class="btn btn-outline-primary" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+   </div>
+   <div class="step two text-success">
+      <div class="circle">
+         <i class="fas fa-cookie-bite"></i>
+         <h4>Integration<br />Phase 2</h4>
+      </div>
+      <article data-step="6">
+         <header class="d-flex align-items-center text-success">
+            <i class="fas fa-cookie-bite"></i>
+            <h6>Plaid (Credit Application)</h6>
+         </header>
+
+         <div class="body">
+            <small> KYC, Bank Linking and the logic & decisioning behind when an applicant sees an approved/denied workflow. </small>
+
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-success" href="#">Prev</a>
+               <a class="btn btn-outline-success" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+      <article data-step="7">
+         <header class="d-flex align-items-center text-success">
+            <i class="fas fa-cookie-bite"></i>
+            <h6>MBanq (Frontend)</h6>
+         </header>
+
+         <div class="body">
+            <small> Integrate the credit card API including transaction data. </small>
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-success" href="#">Prev</a>
+               <a class="btn btn-outline-success" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+      <article data-step="8">
+         <header class="d-flex align-items-center text-success">
+            <i class="fas fa-cookie-bite"></i>
+            <h6>Plaid (Frontend)</h6>
+         </header>
+
+         <div class="body">
+            <small> Integrate the Transfer API to allow cardholders to pay their bill. </small>
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-success" href="#">Prev</a>
+               <a class="btn btn-outline-success" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+      <article data-step="9">
+         <header class="d-flex align-items-center text-success">
+            <i class="fas fa-cookie-bite"></i>
+            <h6>Integrate Rewards (Frontend)</h6>
+         </header>
+
+         <div class="body">
+            <small> Integrate Access Development and custom Airline miles functionality. </small>
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-success" href="#">Prev</a>
+               <a class="btn btn-outline-success" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+      <article data-step="10">
+         <header class="d-flex align-items-center text-success">
+            <i class="fas fa-cookie-bite"></i>
+            <h6>Backend Prep</h6>
+         </header>
+
+         <div class="body">
+            <small> Get the backend prepped with what data needs to travel to it and hwo that data is being presented. </small>
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-success" href="#">Prev</a>
+               <a class="btn btn-outline-success" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+   </div>
+   <div class="step three text-danger">
+      <div class="circle">
+         <i class="fas fa-dragon"></i>
+         <h4>Backend<br />Phase 3</h4>
+      </div>
+      <article data-step="11">
+         <header class="d-flex align-items-center text-danger">
+            <i class="fas fa-dragon"></i>
+            <h6>Plaid (Backend)</h6>
+         </header>
+
+         <div class="body">
+            <small> Connect data to Supabase. </small>
+
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-danger" href="#">Prev</a>
+               <a class="btn btn-outline-danger" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+      <article data-step="12">
+         <header class="d-flex align-items-center text-danger">
+            <i class="fas fa-dragon"></i>
+            <h6>MBanq (Backend)</h6>
+         </header>
+
+         <div class="body">
+            <small> Integrate accounts, accounting, products, and the credit card APIs. </small>
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-danger" href="#">Prev</a>
+               <a class="btn btn-outline-danger" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+      <article data-step="13">
+         <header class="d-flex align-items-center text-danger">
+            <i class="fas fa-dragon"></i>
+            <h6>Rewards (Backend)</h6>
+         </header>
+
+         <div class="body">
+            <small> Connect Access Development data and airline miles tracking and redemption CSV file to backend. </small>
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-danger" href="#">Prev</a>
+               <a class="btn btn-outline-danger" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+      <article data-step="14">
+         <header class="d-flex align-items-center text-danger">
+            <i class="fas fa-dragon"></i>
+            <h6>QA, Testing, & Beta Launch</h6>
+         </header>
+
+         <div class="body">
+            <small> Make needed updates and fixes that pop up. </small>
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-danger" href="#">Prev</a>
+               <a class="btn btn-outline-danger" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+      <article data-step="15">
+         <header class="d-flex align-items-center text-danger">
+            <i class="fas fa-dragon"></i>
+            <h6>Integrate Sivo</h6>
+         </header>
+
+         <div class="body">
+            <small> Integrate debt facility. </small>
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-danger" href="#">Prev</a>
+               <a class="btn btn-outline-danger" href="#">Next</a>
+            </div>
+         </div>
+      </article>
+      <article data-step="16">
+         <header class="d-flex align-items-center text-danger">
+            <i class="fas fa-flag-checkered" style="font-size: 4em; padding: 20px"></i>
+            <h6>Full Launch</h6>
+         </header>
+
+         <h6></h6>
+         <div class="body">
+            <small> Launch full product. </small>
+            <div class="d-flex justify-content-between mt-3 controls">
+               <a class="btn btn-outline-danger" href="#">Prev</a>
+            </div>
+         </div>
+      </article>
+   </div>
+</div>
+
+<br></br><br></br><br>
+
+<div class="col-left">
+   <div class="wrapper">
+      <div class="triumph" data-title="$2M Series A" data-subtitle="Raise $2M Series A round">
+      </div>
+      <div class="triumph" data-title="End user spend" data-subtitle="Reach $10M+ in total spend">
+      </div>
+      <div class="triumph" data-title="Monthly Spend" data-subtitle="Reach $100k in monthly end user spend">
+      </div>
+      <div class="triumph" data-title="Partner Success" data-subtitle="Create 20 successful partner card programs">
+      </div>
+      <div class="triumph" data-title="SOC2" data-subtitle="Certified SOC2 compliant">
+      </div>
+      <div class="triumph" data-title="Advisor Board" data-subtitle="0/5 Advisors Found">
+      </div>
+      <div class="triumph" data-title="C-Suite Executive Take Over" data-subtitle="1/5 C Suites Onboarded">
+      </div>
+      <div class="triumph" data-title="Partner Payout Milestone" data-subtitle="Payout a total of $10,082,020 to our partners">
+      </div>
+      <div class="triumph" data-title="Sponsors" data-subtitle="1/25 Sponsors Backing Project">
+      </div>
+      <div class="triumph" data-title="Banking Supporters" data-subtitle="3/10 Bank Relationships Formed">
+      </div>
+   </div>
+</div>
+
+<div class="col-right">
+   <h3>Triumphant Milestones</h3>
+
+   <p>Dear Entrepreneurs,</p>
+
+   <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. It’s not about having a specific set time; both personal and professional lives are 24/7. It’s simply, more about making the right allocation to each one and recognizing that it’s going to be different every single day.</p>
+
+   <p>I’ve been very lucky, from the beginning. I’ve found that as long as you’re fundamentally good – as long as you’re not being bad to people – people give you a lot of room to be yourself, because being yourself is being honest. And that’s what people want to see. I always did something that I was a little not ready to do. I think that, that is how you grow. When there’s a moment of ‘Wow, I’m not so sure that I can do this, and you push through those moments, it’s then that you have a breakthrough. Sometimes that’s a sign that something really great is about to happen. You’re about to grow and learn a lot more about yourself.</p>
+
+   <p>I hope to see you there!</p>
+
+   <p>&nbsp;</p>
+
+   <p>Vashon Gonzales, Chairman</p>
+
+   <div class="emblem-wrapper">
+      <img src="https://kapital.kaped.io/img/logo.svg" alt="KAPED logo" width="200px">
+   </div>
+
+   <div class="triumph-detail">
+      <div class="detail-inner">
+         <div class="detail-icon"></div>
+         <div class="detail-title">Light of the Garden</div>
+         <div class="detail-subtitle">Defeated the dark heart of the Black Garden and Stuff</div>
+      </div>
+      <div class="detail-bar"></div>
+   </div>
+</div>
+</div>
+</body>
