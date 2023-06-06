@@ -1,0 +1,23 @@
+name: Main
+id: 'ari:cloud:compass:e648b3c4-1609-4dd1-83ee-473a3956f868:component/ffd68ce4-da48-4fb5-b081-17e0fd7498a6/779725ab-2617-48a1-9ec2-5df8863ce175'
+description: null
+configVersion: 1
+typeId: WEBSITE
+ownerId: 'ari:cloud:teams::team/03eee234-f3ec-422e-9b43-97c0f34d4400'
+fields:
+  lifecycle: Active
+  tier: 4
+links:
+  - name: null
+    type: REPOSITORY
+    url: 'https://github.com/Karat-Card/Main'
+relationships:
+  DEPENDS_ON:
+    - 'ari:cloud:compass:e648b3c4-1609-4dd1-83ee-473a3956f868:component/ffd68ce4-da48-4fb5-b081-17e0fd7498a6/78a15b23-92e4-412c-bafa-c4269be7a86c'
+labels:
+  - 'language:javascript'
+  - 'source:github'
+customFields: null
+
+# Learn more about formatting compass.yml:
+# https://go.atlassian.com/compass-yml-format
