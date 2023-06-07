@@ -1,0 +1,417 @@
+:root:not(.light),
+:root:not([data-theme="light"]),
+:root[data-theme="dark"] {
+  /* defaults */
+  --bg-1: var(--dark-bg-1);
+  --bg-2: var(--dark-bg-2);
+  --bg-3: var(--dark-bg-3);
+  --bg-4: var(--dark-bg-4);
+  --bg-alpha-1: var(--dark-bg-alpha-1);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --text-4: var(--dark-text-4);
+  --border-1: var(--dark-border-1);
+  --border-2: var(--dark-border-2);
+}
+.dark,
+[data-theme="dark"] {
+  /* backgrounds (dark) */
+  --bg-1: #111518;
+  --bg-2: #111827;
+  --bg-3: #20262e;
+  --bg-4: #234;
+  --bg-alpha-1: #ffffff05;
+  --text-1: #fff;
+  --text-2: #ddd;
+  --text-3: #fffa;
+  --text-4: #789;
+  --border-1: #000a;
+  --border-2: #fff3;
+  --shadow-1: #0004;
+  --shadow-2: #0003;
+  --shadow-3: #0002;
+  --shadow-4: #000f;
+  --btn-shadow: #fff3;
+  --line-numbers-bg: #111;
+  --line-numbers-text: #ddd;
+  --border-title: #0009;
+}
+.light,
+[data-theme="light"] {
+  --bg-1: #f0f0f0;
+  --bg-2: #ddddea;
+  --bg-3: #ececec;
+  --bg-4: #9ab;
+  --bg-alpha-1: #fff6;
+  --text-1: #000;
+  --text-2: #123;
+  --text-3: #000a;
+  --text-4: #456;
+  --border-1: #0004;
+  --border-2: #0003;
+  --border-title: #0003;
+  --shadow-1: #0004;
+  --shadow-2: #0003;
+  --shadow-3: #0002;
+  --shadow-4: #0004;
+  --btn-shadow: #fff6;
+  --line-numbers-bg: #e0e0e966;
+  --line-numbers-text: #444;
+}
+
+html,
+body {
+  overflow: hidden;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: var(--font-sans, system-ui, sans-serif);
+  -webkit-user-scroll: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+html {
+  overflow: hidden;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.terminal,
+.v-terminal,
+[v-terminal],
+[v-terminal=""],
+:is(.terminal, .v-terminal, [v-terminal=""], [v-terminal]) > * {
+  /* window buttons */
+  --btn-size: 12px;
+  --btn-close: #d9515d;
+  --btn-minimize: #f4c025;
+  --btn-zoom: #3ec930;
+  /* --btn-shadow: #fff3; */
+
+  /* globals */
+  --font-mono: "Operator Mono SSm Lig", "Dank Mono", "Roboto Mono", "Fira Mono",
+    Consolas, Menlo, Monaco, "Courier New", Courier, monospace;
+  --font-sans: system-ui, sans-serif;
+
+  /* main terminal window */
+  --terminal-padding: 0.5rem 1rem 0.8rem 0rem;
+  --terminal-shadow: 0 0.22rem 0.4rem var(--shadow-1),
+    0 1rem 1.6rem 0.2rem var(--shadow-2),
+    1.25rem 3.2rem 5rem 0.2rem var(--shadow-3);
+  --terminal-w: 30rem;
+  --terminal-max-w: 90vw;
+  --terminal-min-h: 15rem;
+  --terminal-bg: var(--bg-1); /* #20262e */
+  --terminal-text: var(--text-1);
+  --terminal-font-size: 0.86rem;
+
+  /* top title bar */
+  --terminal-title-font-size: var(--btn-size);
+  --terminal-title-line-height: 1.2em;
+  --terminal-title-padding-x: 0;
+  --terminal-title-padding-y: calc(var(--btn-size));
+  --terminal-title-border: 2px solid var(--border-title, #0009);
+  --terminal-title-bg: var(--bg-2);
+  --terminal-title-bg-from: var(--bg-2);
+  --terminal-title-bg-to: var(--bg-3);
+  --terminal-default-title: "bash";
+
+  /* line numbers in left margin */
+  --line-numbers-font-size: 0.8em;
+  --line-numbers-line-height: 1.2;
+  --line-numbers-padding: 0 0.5rem 0 1rem;
+  --line-numbers-margin: 0 1.5rem 0 0;
+  --line-numbers-border: 1px solid var(--border-2);
+  --line-numbers-min-w: 2.5rem;
+  --line-numbers-max-w: 3.5rem;
+
+  /* button shadows */
+  --btn-shadow-color: var(--btn-shadow);
+  --btn-shadow-offset-x: 0.5px;
+  --btn-shadow-offset-y: 1px;
+
+  /* do not edit below here kthx */
+  --terminal-border-radius: calc(var(--btn-size, 13px) / 1.333);
+  --btn-shadows: 0.33px 1px 0.33px 0.33px var(--btn-shadow),
+    calc(var(--btn-offset) + 0.33px) 1px 0.33px 0.33px var(--btn-shadow),
+    calc(var(--btn-offset-2) + 0.33px) 1px 0.33px 0.33px var(--btn-shadow);
+
+  /* window buttons */
+  --btn-offset: calc(
+    var(--btn-size, 15px) + calc(var(--btn-size, 15px) / 1.65)
+  );
+  --btn-offset-2: calc(var(--btn-offset) * 2);
+
+  /* compiled box shadow + line numbers inset shadow */
+  --terminal-box-shadow: var(--terminal-shadow);
+  /* inset var(--line-numbers-max-w, 3.5rem) 0 0 -1rem var(--line-numbers-bg, #fff1), */
+  /* inset calc(var(--line-numbers-max-w, 3.5rem) + 1px) 0 0 -1rem var(--line-numbers-bg, var(--shadow-3)) */
+}
+
+.terminal,
+[terminal],
+[terminal=""] {
+  min-height: var(--terminal-min-h, auto);
+  background-color: var(--terminal-bg);
+  color: var(--terminal-text);
+  font-size: var(--terminal-font-size, 1rem);
+  font-family: var(--font-mono) !important;
+  line-height: 1.2;
+  display: block;
+  border-radius: var(--terminal-border-radius, 6px);
+  margin: auto;
+  padding: var(--terminal-padding, 1.5rem);
+  padding-top: calc(var(--btn-size) * 3.5 + 0.5rem);
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: var(--terminal-box-shadow);
+  box-shadow: var(--terminal-box-shadow);
+  z-index: 1;
+  overflow: hidden;
+
+  [role="tablist"] {
+    z-index: 120;
+  }
+
+  & ::-webkit-scrollbar,
+  & ::-webkit-scrollbar-track,
+  & ::-webkit-scrollbar-thumb {
+    height: 4px;
+    opacity: 0.25;
+    border-radius: 8px;
+    background-color: #fff0;
+    transition: all 0.8s ease-in;
+  }
+
+  & pre:hover ::-webkit-scrollbar,
+  & pre:hover ::-webkit-scrollbar-track,
+  & pre:hover ::-webkit-scrollbar-thumb {
+    background-color: #fff1 !important;
+  }
+
+  & + & {
+    margin: 2.5rem auto;
+  }
+
+  &:focus,
+  &:active,
+  &:target {
+    outline: 2px solid var(--terminal-focus-ring, var(--btn-close, #0cf4)) 1px !important;
+  }
+
+  /* window buttons */
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(var(--btn-size, 15px) * 1.625);
+    left: var(--btn-size, 15px);
+    display: inline-block;
+    width: var(--btn-size, 15px);
+    height: var(--btn-size, 15px);
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    transform: translateY(-50%);
+    background: var(--btn-close);
+    -webkit-box-shadow: var(--btn-offset) 0 0 var(--btn-minimize),
+      var(--btn-offset-2) 0 0 var(--btn-zoom);
+    box-shadow: var(--btn-offset) 0 0 var(--btn-minimize),
+      var(--btn-offset-2) 0 0 var(--btn-zoom), var(--btn-shadows);
+    z-index: 120;
+  }
+
+  /* top title bar */
+  &::after {
+    --attr-title: attr(data-title);
+    --attr-title-2: attr(title);
+
+    content: " ";
+    content: var(--terminal-default-title, "bash");
+    content: attr(title);
+    content: attr(data-title);
+
+    position: absolute;
+    font-family: var(--font-sans, sans-serif) !important;
+    font-size: var(--terminal-title-font-size, 1.1em) !important;
+    color: var(--color-text-subtle);
+    text-align: center;
+
+    background-color: var(--terminal-bg);
+    background-image: linear-gradient(
+      0deg,
+      var(--terminal-title-bg-from, var(--terminal-bg)) 0%,
+      var(--terminal-title-bg-to, var(--terminal-bg)) 90%
+    );
+    line-height: var(--terminal-title-line-height, 1.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    min-height: calc(var(--terminal-title-font-size, 1em) + 2px);
+    padding-top: var(--terminal-title-padding-y, 5px);
+    padding-right: var(--terminal-title-padding-x, 0);
+    padding-bottom: calc(var(--terminal-title-padding-y, 5px));
+    padding-left: var(--terminal-title-padding-x, 0);
+    border-bottom: var(--terminal-title-border, 1px solid #fff2);
+    z-index: 100;
+    border-top-left-radius: var(--terminal-border-radius);
+    border-top-right-radius: var(--terminal-border-radius);
+    box-shadow: inset 0 0 1px var(--terminal-bg), inset 0 1px 0 #fff3;
+  }
+
+  .line-numbers-bg::before {
+    width: calc(var(--line-numbers-max-w, 3.5rem) - 0.5rem);
+    height: calc(100% + 2rem);
+    position: absolute;
+    top: -1rem;
+    left: -1px;
+    bottom: -1rem;
+    z-index: 50;
+    background-color: var(--line-numbers-bg, #101010);
+    content: "";
+  }
+
+  /* code content  */
+  pre,
+  pre > code {
+    font-family: var(--font-mono, "Dank Mono", "Fira Code", monospace);
+    white-space: pre;
+  }
+
+  pre {
+    counter-reset: line;
+    /* position: relative; */
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    z-index: 10;
+
+    & code {
+      margin: 0;
+      padding: 0;
+      z-index: 11;
+
+      & span.line {
+        display: block;
+        white-space: nowrap;
+        counter-increment: line;
+        z-index: 12;
+
+        &::before {
+          content: counter(line);
+          font-family: var(--font-mono, monospace);
+          font-size: var(--line-numbers-font-size, 0.8em);
+          text-align: right;
+          min-width: var(--line-numbers-min-w, 2rem);
+          max-width: var(--line-numbers-max-w, 4rem);
+          margin: var(--line-numbers-margin);
+          padding: var(--line-numbers-padding, 0 1rem);
+          background-color: transparent;
+          color: var(--line-numbers-text, #fff);
+
+          /* border-right: var(--line-numbers-border, 1px solid #fff3); */
+          line-height: var(--line-numbers-line-height, 1.5);
+          position: sticky;
+          left: 0.5rem;
+          z-index: 60;
+        }
+      }
+    }
+  }
+}
+
+pre[hidden=""],
+pre[hidden="true"],
+pre[hidden="hidden"] {
+  display: none !important;
+}
+/* pre:not([hidden=""].[hidden="true"],[hidden="hidden"]) {
+  display: block;
+} */
+
+/* for a better unocss user experience */
+[un-cloak] {
+  display: none;
+}
+
+.bg-gradient {
+  transition-property: all, transform, scale, width, height, opacity !important;
+}
+
+.bg-container {
+  animation-duration: 30s !important;
+  --transform: scale(1);
+  animation: morph 10s ease-in infinite 2s both alternate,
+    wobble 20s ease-in-out infinite 4s both alternate;
+  // morph2 30s ease-in-out infinite 6s both alternate !important;
+  transition: transform;
+  transform-origin: 50% 50%;
+  transform: perspective(500px) translateZ(1) var(--transform, rotate(0));
+}
+.bg-gradient-1 {
+  animation-duration: 10s !important;
+  animation-delay: 2s !important;
+  animation-timing-function: ease-in;
+}
+
+.ellipsis-1 {
+  animation-delay: 0.5s !important;
+  animation-duration: 20s !important;
+}
+
+.bg-gradient-2 {
+  animation-duration: 8s !important;
+}
+
+.ellipsis-2 {
+  animation-delay: 1s !important;
+  animation-duration: 12s !important;
+}
+
+.bg-gradient-3 {
+  animation-duration: 9s !important;
+  animation-delay: 1s !important;
+}
+
+.ellipsis-3 {
+  animation-delay: 1.5s !important;
+  animation-duration: 10s !important;
+}
+
+@keyframes morph {
+  50% {
+    transform: var(--transform) translateZ(120%)
+      rotate3d(0.8turn, 0.75turn, 1.3turn);
+  }
+}
+
+@keyframes morph2 {
+  30% {
+    --transform: var(--transform) rotate(120deg);
+  }
+  60% {
+    --transform: var(--transform) rotate(-120deg);
+  }
+  100% {
+    --transform: rotate(0deg);
+  }
+}
+
+@keyframes wobble {
+  20% {
+    --transform: var(--transform) scale3d(1.5, 1.75, 0.95);
+  }
+
+  60% {
+    --transform: scale3d(1.1, 1.25, 1.5);
+  }
+}
