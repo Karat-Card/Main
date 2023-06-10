@@ -1,13 +1,13 @@
 ---
 notPage:
-- "/admin/data.json"
+  - "/admin/data.json"
 layout: 
 ---
 
 {
   "collections": {
     {% for item in site.collections %}
-      "{{item.label}}": {{ site[item.label] | jsonify}}
+      "{{item.label}}": {{ site[item.label] | jsonify }}
       {% if forloop.last %}{% else %},{% endif %}
     {% endfor %}
   },
