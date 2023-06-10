@@ -1,6 +1,6 @@
 ---
 notPage:
-  - "/admin/data.json"
+- "/admin/data.json"
 layout: 
 ---
 
