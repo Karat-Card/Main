@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: main/karat-card.github.io
+  repo: karat-card/main.github.io
   branch: main
   site_domain: soft-cactus-e6d1d6.netlify.app
 
