@@ -1,6 +1,6 @@
 body {
-    background-color: #051854;
-    /* background: linear-gradient(#310c68, #051854); */
+    background-color: #0D132B;
+    background: linear-gradient(#10253F, #0D132B); 
     color: #fff;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: 400;
@@ -9,7 +9,7 @@ body {
 }
 
 .bg-primary {
-    background-color: #2047b2!important;
+    background-color: #163A60!important;
 }
 
 .btn-xl {
@@ -49,15 +49,15 @@ body {
 }
 
 .bg-grad-1 {
-    background: linear-gradient(#333333, #05185400);
+    background: linear-gradient(#333333, #0D132B);
 }
 
 .bg-grad-2 {
-    background: linear-gradient(#051854, #333333);
+    background: linear-gradient(#0D132B, #333333);
 }
 
 .bg-grad-3 {
-    background: linear-gradient(180deg, #fa9e00, #f46e0d);
+    background: linear-gradient(180deg, #fff, #F4F4F4);
 }
 
 h1 {
